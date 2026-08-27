@@ -1,0 +1,14 @@
+{
+  "task-buttons.tasks": [
+    {
+      "label": "▶ Resource Cost Analyzer",
+      "task": "Resource Cost Analyzer",
+      "tooltip": "Coleta custo dos últimos 3 meses da lista_recursos.xlsx (com fallback em nuvem)"
+    },
+    {
+      "label": "▶ Resource Cost Analyzer (rápido)",
+      "task": "Resource Cost Analyzer (sem cloud fallback)",
+      "tooltip": "Igual acima, mas só usa a base local — não consulta a Azure para recursos não encontrados"
+    }
+  ]
+}
