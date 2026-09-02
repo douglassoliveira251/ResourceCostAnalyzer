@@ -9,7 +9,7 @@
         "script\\resource_cost_analyzer.py",
         "--input", "lista_recursos.txt",
         "--output", "custos_saida.xlsx",
-        "--base", "C:\\Users\\br05665995\\OneDrive - Coca-Cola FEMSA\\Femsa ITOps\\FinOps\\Automação IA\\AzureReports\\AzureBase_FinOps.csv"
+        "--base", "C:\\Users\\br05665995\\OneDrive - Coca-Cola FEMSA\\FEMSA Cloud Ops\\FinOps\\Automação\\AzureReports\\AzureBase_FinOps.csv"
       ],
       "options": {
         "cwd": "${workspaceFolder}"
