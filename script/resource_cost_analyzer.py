@@ -846,6 +846,17 @@ def write_output_excel(results: list, months: list, output_path: str) -> None:
             by_sub.to_excel(writer, index=False, startrow=sub_header_row, sheet_name="Resumo")
         out_df.to_excel(writer, index=False, startrow=main_header_row, sheet_name="Detalhe")
 
+        # Garante que a aba "Resumo" SEMPRE exista, mesmo quando não há nenhum dado de
+        # custo pra resumir (ex.: todos os recursos vieram como ERRO ou NAO_ENCONTRADO
+        # nesta execução). Sem isso, a aba nunca é gravada no arquivo e o load_workbook
+        # logo abaixo falha com KeyError ao tentar acessar wb["Resumo"].
+        if "Resumo" not in writer.book.sheetnames:
+            ws_resumo = writer.book.create_sheet("Resumo", 0)
+            ws_resumo["A2"] = (
+                "Nenhum recurso teve custo processado com sucesso nesta execução — "
+                "sem dados para o Resumo. Veja a aba 'Detalhe' e o log para status de cada recurso."
+            )
+
     wb = load_workbook(output_path)
     wb._sheets = [wb["Resumo"], wb["Detalhe"]]  # garante "Resumo" como primeira aba
     wb.active = 0

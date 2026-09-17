@@ -1,6 +1,6 @@
 {
-  "AzureBackup_vmrpaprod01_5422351544094406663": {
-    "status": "ok",
+  "10ec64091cbe42b989823a5f667745744": {
+    "status": "not_found",
     "months": [
       "2026-03",
       "2026-04",
@@ -9,23 +9,50 @@
       "2026-07",
       "2026-08"
     ],
-    "rows": [
-      {
-        "Recurso": "AzureBackup_vmrpaprod01_5422351544094406663",
-        "Status": "OK",
-        "Tipo": "microsoft.compute/restorepointcollections",
-        "Subscription": "KOF-SUPCHAIN-MEX",
-        "ResourceGroup": "vmrpaprod011",
-        "Observacoes": "Custo não aparece no ResourceId individual — valor agregado de TODOS os recursos do tipo 'microsoft.compute/restorepointcollections' no Resource Group 'vmrpaprod011'. Outras linhas do mesmo RG/tipo apontam pra esta em vez de repetir o valor.",
-        "2026-03_Total": 0.0,
-        "2026-04_Total": 0.0,
-        "2026-05_Total": 0.0,
-        "2026-06_Total": 0.0,
-        "2026-07_Total": 0.0,
-        "2026-08_Total": 0.0
-      }
+    "rows": [],
+    "script_version": "22e73fb236a6",
+    "timestamp": "2026-09-17T10:47:01"
+  },
+  "c3009df1653e4745ae39cbcfedcb4e264": {
+    "status": "not_found",
+    "months": [
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08"
     ],
-    "script_version": "96dbf702c0c4",
-    "timestamp": "2026-09-01T11:07:00"
+    "rows": [],
+    "script_version": "22e73fb236a6",
+    "timestamp": "2026-09-17T10:47:15"
+  },
+  "e8e02b8b639941b1b7bb950f3247a80a4": {
+    "status": "not_found",
+    "months": [
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08"
+    ],
+    "rows": [],
+    "script_version": "22e73fb236a6",
+    "timestamp": "2026-09-17T10:47:29"
+  },
+  "fce663b365fd4031bcf7094896e2e318": {
+    "status": "not_found",
+    "months": [
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08"
+    ],
+    "rows": [],
+    "script_version": "22e73fb236a6",
+    "timestamp": "2026-09-17T10:47:45"
   }
 }
